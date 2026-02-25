@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV — HOLYWANDERER</title>
+  <link rel="stylesheet" href="../Styles/reset.css">
+  <link rel="stylesheet" href="../Styles/hero.css">
+  <link rel="stylesheet" href="../Styles/navbar.css">
+  <link rel="stylesheet" href="../Styles/footer.css">
+  <link rel="stylesheet" href="../Styles/mobile.css">
+  <style>
+    body {
+      margin: 0;
+      background: #0a0a0a;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .dev-page {
+      min-height: 100vh;
+      padding: 80px 40px 60px;
+      max-width: 860px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .dev-page h1 {
+      font-size: 3rem;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #ffe600;
+    }
+
+    .dev-page .subtitle {
+      font-size: 1rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 60px;
+    }
+
+    .section {
+      margin-bottom: 56px;
+    }
+
+    .section h2 {
+      font-size: 1.1rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #ffe600;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 24px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: #ccc;
+      text-align: justify;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .section ul li {
+      font-size: 1rem;
+      line-height: 2;
+      color: #ccc;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #ffe600;
+    }
+
+    .highlight {
+      color: #ffe600;
+      font-weight: bold;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #ccc;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 2px;
+    }
+
+    .cta-back {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #000;
+      background-color: #ffe600;
+      padding: 12px 30px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-back:hover {
+      background-color: #ff6600;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<div class="dev-page">
+
+  <h1>Developer</h1>
+  <p class="subtitle">42 School — Career Research</p>
+
+  <!-- Role Recommendation -->
+  <div class="section">
+    <h2>Recommended Role</h2>
+    <p>
+      You are finishing <span class="highlight">42 School</span> — a peer-to-peer, project-based programme
+      that builds deep foundations in C, C++, Unix systems, algorithms, and web development.
+      You also already ship creative web experiences (this very site uses Three.js and WebGL).
+      <br><br>
+      The role that best maps to this combination is
+      <span class="highlight">Creative Frontend / WebGL Developer</span>.
+      Berlin's tech scene — music platforms, creative agencies, game studios, and
+      interactive media companies — actively recruits this profile.
+      Roles to target on LinkedIn:
+    </p>
+    <ul>
+      <li>Frontend Developer (Creative / Interactive)</li>
+      <li>WebGL / Three.js Developer</li>
+      <li>Creative Technologist</li>
+      <li>Graphics / Shader Developer (junior)</li>
+      <li>Full-Stack Developer with a frontend focus</li>
+    </ul>
+    <div class="tag-list">
+      <span class="tag">Three.js</span>
+      <span class="tag">WebGL</span>
+      <span class="tag">GLSL</span>
+      <span class="tag">JavaScript / TypeScript</span>
+      <span class="tag">C / C++</span>
+      <span class="tag">Linux / Shell</span>
+    </div>
+  </div>
+
+  <!-- Why this role -->
+  <div class="section">
+    <h2>Why This Fit</h2>
+    <p>
+      42 School graduates arrive with strong low-level instincts — memory management,
+      data structures, performance — that most self-taught frontend engineers lack.
+      Pair that with hands-on Three.js experience and an eye for aesthetics shaped by years
+      inside Berlin's club culture, and you occupy a rare intersection.
+      Companies building music visualisers, interactive installations,
+      browser-based games, and data-art dashboards are hard-pressed to find developers
+      who understand both the craft and the audience.
+    </p>
+  </div>
+
+  <!-- Pet Project -->
+  <div class="section">
+    <h2>Pet Project — Audio-Reactive Visualiser</h2>
+    <p>
+      Build a <span class="highlight">real-time audio-reactive 3D visualiser</span>
+      in the browser using the <strong>Web Audio API</strong> and <strong>Three.js</strong>.
+      Let users drop in any audio file (or connect a microphone) and watch geometry,
+      particles, and post-processing effects respond to bass, mid, and treble frequencies in real time.
+      <br><br>
+      This project ticks every box a hiring manager looks at:
+    </p>
+    <ul>
+      <li>Demonstrates Three.js / GLSL shader skills (you already have them)</li>
+      <li>Uses Web Audio API — an in-demand, niche browser technology</li>
+      <li>Is immediately visual and shareable — ideal as a portfolio piece</li>
+      <li>Bridges your DJ identity with your engineering identity</li>
+      <li>Can evolve: add BPM detection, MIDI controller input, live streaming</li>
+    </ul>
+    <div class="tag-list">
+      <span class="tag">Web Audio API</span>
+      <span class="tag">Three.js</span>
+      <span class="tag">GLSL Shaders</span>
+      <span class="tag">AnalyserNode</span>
+      <span class="tag">Particles</span>
+    </div>
+  </div>
+
+  <a href="../index.html" class="cta-back">← Back to Cube</a>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2023 DJ HOLYWANDERER | <a href="https://www.instagram.com/holywandererrr/" target="_blank">Instagram</a>
+  | <a href="https://soundcloud.com/holywanderer" target="_blank">Sound Cloud</a>
+</footer>
+
+</body>
+</html>

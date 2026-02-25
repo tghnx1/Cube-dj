@@ -84,6 +84,7 @@ function redirectToPage(faceIndex) {
         './Pages/About.html',
         './Pages/Legalisation.html',
         './Pages/Whoroscope.html',
+        './Pages/Dev.html',
     ];
     if (faceIndex >= 0 && faceIndex < pages.length) {
         window.location.href = pages[faceIndex]; // Navigate to corresponding page
